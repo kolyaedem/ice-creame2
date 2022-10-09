@@ -7,3 +7,8 @@ $primary-text-color: #131313;
     font-size: $fs;
     line-height: calc($lh / $fs);
 }
+%align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
