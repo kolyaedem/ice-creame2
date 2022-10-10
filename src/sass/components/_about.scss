@@ -12,6 +12,7 @@
 }
 
 .about__label {
+  font-family: Montserrat;
   @include font(700, 18px, 22px);
   //   font-weight: 700;
   //   font-size: 18px;
@@ -30,6 +31,7 @@
   }
 }
 .about__title {
+  font-family: Seymour One;
   @include font(400, 30px, 38px);
   max-width: 200px;
   //   font-weight: 400;
@@ -54,6 +56,7 @@
 }
 .about__list-text,
 .about__list-text-one {
+  font-family: Montserrat;
   @include font(400, 12px, 20px);
   width: 100%;
   // font-weight: 400;
@@ -69,13 +72,13 @@
     max-width: 220px;
   }
   @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
     max-width: 336px;
     text-align: start;
   }
-  @media screen and (min-width: 768px) {
-    max-width: 463px;
-  }
   @media screen and (min-width: 1200px) {
+    max-width: 463px;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -90,6 +93,7 @@
 .about__list-text-to {
   display: none;
   @media screen and (min-width: 768px) {
+    font-family: Montserrat;
     text-align: start;
     display: block;
     max-width: 336px;
@@ -117,6 +121,7 @@
   margin-right: auto;
   margin: 0 auto 40px auto;
   @media screen and (min-width: 768px) {
+    max-width: 335px;
     box-shadow: 0px -25px 0 0 rgba(248, 210, 78, 0.7);
     border-radius: 1228px;
     margin-right: 32px;
@@ -161,6 +166,7 @@
     flex-direction:row;}
   }
 
+}
 
 //  <!--PADING SECTION-->
 // .advantage {
@@ -178,35 +184,30 @@
 .advantage__list {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: baseline;
-
   }
 }
 .advantage__list-item {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 152px) / 2);
-    padding-bottom: 40px;
-    margin-bottom: 0;
-
-  }
   @media screen and (min-width: 768px) {
-    width: calc((100% - 32px) / 2);
+    width: calc((100% - 152px) / 2);
+    padding-bottom: 200px;
+    margin-bottom: 0;
   }
-
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 32px) / 2);
+    padding-bottom: 180px;
+  }
 }
 .advantage__item {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 50px;
   height: 50px;
   background-color: #f8d24e;
@@ -221,7 +222,7 @@
   fill: black;
 }
 .name-container {
-
+  // font-family: Montserrat;
   @include font(700, 36px, 42px);
 
   text-align: center;
@@ -231,8 +232,7 @@
   margin-top: 16px;
   margin-bottom: 18px;
 
-  @media screen and (min-width: 480px) {
-
+  @media screen and (min-width: 768px) {
     text-transform: none;
     font-size: 48px;
     line-height: 59px;
@@ -246,6 +246,7 @@
   }
 }
 .advantage__discribe {
+  font-family: Montserrat;
   width: 100%;
 
   @include font(700, 12px, 20.4px);
@@ -256,7 +257,6 @@
     max-width: 230px;
   }
   @media screen and (min-width: 768px) {
-
     max-width: 152px;
     @include font(400, 14px, 24.36px);
 
@@ -271,16 +271,12 @@
 .advantage__list-item:last-child {
   margin-bottom: 0;
   padding-bottom: 60px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 152px) / 2);
-
-    padding-bottom: 40px;
-
-  
-    margin-bottom: 200px;
+    padding-bottom: 200px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 180px;
-
+    width: calc((100% - 32px) / 2);
+    padding-bottom: 180px;
   }
 }
