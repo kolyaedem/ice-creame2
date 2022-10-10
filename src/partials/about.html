@@ -1,9 +1,9 @@
-<section class="about">
+<!-- <section class="about">
   <div class="container">
     <p class="about__label">tradition and love</p>
-    <h2 class="about__title">how it’s made?</h2>
-    <!-- <img src="" alt="cow" /> -->
-    <p class="about__list-text">
+    <h2 class="about__title">how it’s made?</h2> -->
+<!-- <img src="" alt="cow" /> -->
+<!-- <p class="about__list-text">
       Ice is a place where you will become not only a little happier, but also
       healthier. Health is the main value for us, and we follow it when creating
       our handmade desserts.
@@ -14,5 +14,146 @@
       Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
       milkshakes.
     </p>
+  </div>
+</section> -->
+<section class="about">
+  <div class="container">
+    <p class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about__position">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/cow-desktop.webp    1x,
+            ./images/desktop/cow-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/cow-desktop.jpg    1x,
+            ./images/desktop/cow-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/cow-tablet.webp    1x,
+            ./images/tablet/cow-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/tablet/cow-tablet.jpg    1x,
+            ./images/tablet/cow-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/cow-mobile.webp    1x,
+            ./images/mobile/cow@2x-mobile.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/cow-mobile.jpg    1x,
+            ./images/mobile/cow@2x-mobile.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="./images/mobile/cow-mobile.jpg" alt="cow" class="cow-img" />
+      </picture>
+      <!-- <picture> -->
+      <!-- <source
+            srcset="./images/dcow.webp 1x, ./images/dcow@2x.webp 2x"
+            media="(min-width: 1200px)"
+            type="image/webp"
+          /> -->
+      <!-- <source
+            srcset="./images/dcow.jpg 1x, ./images/dcow@2x.jpg 2x"
+            media="(min-width: 1200px)"
+          /> -->
+      <!-- <source
+            srcset="./images/tabletcow.webp 1x, ./images/tabletcow.webp 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          /> -->
+      <!-- <source
+            srcset="./images/tabletcow.jpg 1x, ./images/tabletcow@2x.jpg 2x"
+            media="(min-width: 768px)"
+          /> -->
+      <!-- <source
+            srcset="./images/mobilecow.webp 1x, ./images/mobilecow@2x.webp 2x"
+            media="(max-width: 767px)"
+            type="image/webp"
+          /> -->
+      <!-- <source
+            srcset="./images/mobilecow.jpg 1x, ./images/mobilecow@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="./images/mobilecow.jpg" alt="cow" class="cow-img" />
+        </picture> -->
+
+      <div class="about__tablet">
+        <p class="about__list-text">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about__list-text-one">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="about__list-text-to">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button type="button" class="button" data-modal-open>Read more</button>
+      </div>
+    </div>
+  </div>
+  <div class="advantage">
+    <ul class="advantage__list">
+      <li class="advantage__list-item">
+        <div class="advantage__item">
+          <svg aria-label="icon cow" class="advantage__list-icon">
+            <use href="./images/sprite.svg#icon-cow"></use>
+          </svg>
+        </div>
+        <h3 class="name-container">721</h3>
+        <p class="advantage__discribe" lang="en">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantage__list-item">
+        <div class="advantage__item">
+          <svg aria-label="icon weight" class="advantage__list-icon">
+            <use href="./images/sprite.svg#icon-weight"></use>
+          </svg>
+        </div>
+        <h3 class="name-container">16kg</h3>
+        <p class="advantage__discribe" lang="en">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+      <li class="advantage__list-item">
+        <div class="advantage__item">
+          <svg aria-label="icon ice-crema" class="advantage__list-icon">
+            <use href="./images/sprite.svg#icon-ice-crema"></use>
+          </svg>
+        </div>
+        <h3 class="name-container">84</h3>
+        <p class="advantage__discribe" lang="en">
+          Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+        </p>
+      </li>
+    </ul>
   </div>
 </section>
