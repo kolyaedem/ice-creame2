@@ -1,0 +1,23 @@
+.secondary-btn {
+  font-family: inherit;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 10px;
+  text-align: center;
+  color: #000000;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+  &:disabled {
+    border: 2px solid #ababab;
+    color: #000000;
+  }
+}
