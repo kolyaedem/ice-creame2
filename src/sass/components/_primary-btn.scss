@@ -1,0 +1,22 @@
+.primary-btn {
+  font-family: inherit;
+  font-weight: 600;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  text-align: center;
+  color: #000000;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+    color: #000000;
+  }
+}

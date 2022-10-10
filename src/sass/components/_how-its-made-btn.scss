@@ -1,0 +1,21 @@
+.how-its-made-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: underline;
+  color: #f8d24e;
+
+  &:hover {
+    color: #0a8817;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    color: #ababab;
+  }
+}
