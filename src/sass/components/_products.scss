@@ -1,134 +1,141 @@
 .list {
-    list-style: none;
+  list-style: none;
 }
 
-@media screen and (max-width: 767px) {
-    .products {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: #F5F5F5;
-        background-image: url("../images/product-bg-mobile.jpg"),
-            url("../images/product-bg-mobile.webp");
-    }
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f5f5;
+  background-image: url('../images/produсt-bg-mobile.png'),
+    url('../images/product-bg-mobile.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .products {
-        background-image: url("../images/product-bg@2x-mobile.jpg"),
-            url("../images/product-bg@2x-mobile.webp");
-    }
-}
-
-.products__container {
-    width: 280px;
-    padding-left: 20px;
-    padding-right: 20px;
-
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .products {
+    background-image: url('../images/produсt-bg@2x-mobile.png'),
+      url('../images/product-bg@2x-desktop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .products__suptitle {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #131313;
-    margin-bottom: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 12px;
 }
 
 .products__title {
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 38px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #131313;
-    margin-bottom: 40px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 148px;
+}
+
+.products__list {
+  li:not(:last-child) {
+    margin-bottom: 164px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .products {
-        padding-top: 60px;
-        padding-bottom: 82px;
-        background-image: url("../images/product-bg-tablet.jpg"),
-            url("../images/product-bg-tablet.webp");
-    }
-}
+  .products {
+    padding-top: 60px;
+    padding-bottom: 82px;
+    background-image: url('../images/produсt-bg-tablet.png'),
+      url('../images/product-bg-tablet.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .products__title {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 200px;
+  }
+  .products__suptitle {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .products__container {
+    padding: 0 31px;
+  }
+  .products__title {
+    margin-bottom: 200px;
+  }
+  .products__list {
+    display: flex;
+    justify-content: space-between;
 
+    li:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .products {
-        background-image: url("../images/product-bg@2x-tablet.jpg"),
-            url("../images/product-bg@2x-tablet.webp");
-    }
-}
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .products {
+    background-image: url('../images/produсt-bg@2x-tablet.png'),
+      url('../images/product-bg@2x-tablet.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-.products__container {
-    width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
-
-}
-
-.products__suptitle {
-    font-size: 22px;
-    line-height: 27px;
-
-}
-
-.products__title {
-    font-size: 34px;
-    line-height: 43px;
-}
-
-@media screen and (min-width: 1200px) {
-    .products {
-        padding-top: 60px;
-        padding-bottom: 82px;
-        background-image: url("../images/product-bg-desktop.jpg"),
-            url("../images/product-bg-desktop.webp");
-    }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    .products {
-        background-image: url("../images/product-bg@2x-desktop.jpg"),
-            url("../images/product-bg@2x-desktop.webp");
-    }
-}
-
-
-.products {
-    padding-bottom: 60px;
-}
-
-.products__container {
-    width: 1174px;
-    padding-left: 13px;
-    padding-right: 13px;
-
-}
-
-.products__suptitle {
+  .products__suptitle {
     font-size: 30px;
     line-height: 37px;
     letter-spacing: 0.04em;
-
+  }
 }
 
-.products__title {
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: 0.06em;
+@media screen and (min-width: 1200px) {
+  .products {
+    padding-top: 60px;
+    padding-bottom: 82px;
+    background-image: url('../images/produсt-bg-desktop.png'),
+      url('../images/product-bg-desktop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .products__title {
+    font-size: 45px;
+    line-height: 1.25;
+    margin-bottom: 300px;
+  }
+  .products__suptitle {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.04em;
+  }
+  .products__container {
+    padding: 0 13px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .products {
+    background-image: url('../images/produсt-bg@2x-desktop.png'),
+      url('../images/product-bg@2x-desktop.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
