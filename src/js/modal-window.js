@@ -42,9 +42,9 @@
 })();
 (() => {
     const refs = {
-      openModalBtn: document.querySelector("[buy-modal-open]"),
-      closeModalBtn: document.querySelector("buy-modal-close]"),
-      modal: document.querySelector("[buy-modal]"),
+      openModalBtn: document.querySelector('[buy-modal-open]'),
+      closeModalBtn: document.querySelector('buy-modal-close]'),
+      modal: document.querySelector('[buy-modal]'),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
@@ -56,9 +56,9 @@
 })();
   (() => {
     const refs = {
-      openModalBtn: document.querySelector("[ingredients-modal-open]"),
-      closeModalBtn: document.querySelector("[ingredients-close]"),
-      modal: document.querySelector("[ingredients-modal]"),
+      openModalBtn: document.querySelector('[ingredients-modal-open]'),
+      closeModalBtn: document.querySelector('[ingredients-close]'),
+      modal: document.querySelector('[ingredients-modal]'),
     };
   
     refs.openModalBtn.addEventListener("click", toggleModal);
