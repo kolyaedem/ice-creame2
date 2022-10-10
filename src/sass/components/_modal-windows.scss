@@ -107,7 +107,6 @@
 .checkbox-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 84px;
     margin-bottom:24px ;
 }
 .chosen-product{
@@ -115,7 +114,9 @@
     position: relative;
 
 }
-
+.chosen-product:last-child{
+    margin-bottom: 0;
+}
 .chosen-product::before{
     content:'';
     display: inline-block;
