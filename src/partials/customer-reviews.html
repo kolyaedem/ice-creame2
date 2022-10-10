@@ -1,10 +1,12 @@
 <div class="customer__section">
   <h2 сlass="visually-hidden" hidden>Customer reviews</h2>
-  <div class="container">
-    <div class="customer__swiper">
-      <div class="customer__slide ">
-        <ul class="customer__list one-time">
-          <li class="customer__item">
+  <div class="container customer__wrapper">
+
+
+    
+      <div class="customer__slide swiper customer__thumb">
+        <ul class="customer__list swiper-wrapper">
+          <li class="customer__item swiper-slide">
             <div class="customer__img">
               <picture>
                 <source srcset="./images/desktop/emily-bg1x.webp 1x,
@@ -21,7 +23,7 @@
               </picture>
             </div>
           </li>
-          <li class="customer__item">
+          <li class="customer__item swiper-slide">
             <div class="customer__img">
               <picture>
                 <source srcset="./images/desktop/emily-bg1x.webp 1x,
@@ -37,7 +39,7 @@
               </picture>
             </div>
           </li>
-          <li class="customer__item">
+          <li class="customer__item swiper-slide">
             <div class="customer__img">
               <picture>
                 <source srcset="./images/desktop/emily-bg1x.webp 1x,
@@ -55,8 +57,19 @@
           </li>
         </ul>
 
-        <ul class="customer__list one-time">
-          <li class="customer__item">
+        <!-- If we need navigation buttons -->
+
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    
+
+    <div class="customer__swiper">
+      <div class="customer__slide swiper">
+
+        <ul class="customer__list swiper-wrapper">
+          <li class="customer__item swiper-slide">
             <div class="customer__avatar">
               <div class="customer__icon">
                 <picture>
@@ -75,7 +88,7 @@
               <p class="customer__title">Emily, Los Angeles</p>
             </div>
           </li>
-          <li class="customer__item">
+          <li class="customer__item swiper-slide">
             <div class="customer__avatar">
               <div class="customer__icon">
                 <picture>
@@ -93,7 +106,7 @@
               <p class="customer__title">Sam, Los Angeles</p>
             </div>
           </li>
-          <li class="customer__item">
+          <li class="customer__item swiper-slide">
             <div class="customer__avatar">
               <div class="customer__icon">
                 <picture>
@@ -112,7 +125,7 @@
               <p class="customer__title">Diana, Chicago</p>
             </div>
           </li>
-          <li class="customer__item">
+          <li class="customer__item swiper-slide">
             <div class="customer__avatar">
               <div class="customer__icon">
                 <picture>
@@ -131,40 +144,16 @@
             </div>
           </li>
         </ul>
+
+        <div class="swiper-pagination"></div>
+
+
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
     </div>
+
+
   </div>
 </div>
-
-<!--example slide-->
-
-<!-- <ul class="swiper__list one-time" role="tablist">
-            <li class="swiper__item" role="presentation">
-
-              <button class="swiper__bullet swiper__bullet--current" type="button" role="tab" aria-label="1 of 3" tabindex="0">
-                <div class="customer__avatar">
-                    <div class="customer__icon">
-                        <picture>
-                          <source
-                            srcset="./images/emily1x.webp 1x, ./images/emily2x.webp 2x"
-                            media="(min-width: 320px)"
-                          />
-                          <img
-                            class="customer__icon"
-                            src="./images/emily1x.webp"
-                            alt="Emily, Los Angeles"
-                          />
-                        </picture>
-                      </div>
-                      <p class="customer__subtitle">
-                        I love visiting your cafe. You prepare the most delicious ice cream
-                        in Los Angeles! In addition, you have beautiful serving, cozy
-                        atmosphere and polite staff.
-                      </p>
-                      <p class="customer__title">Emily, Los Angeles</p>
-                </div>
-              </button>
-            </li>
-            <li class="swiper__item" role="presentation"><button class="swiper__bullet" type="button" role="tab" aria-label="2 of 3" tabindex="1"></button></li>
-            <li class="swiper__item" role="presentation"><button class="swiper__bullet" type="button" role="tab" aria-label="3 of 3" tabindex="2"></button></li>
-          </ul> -->
