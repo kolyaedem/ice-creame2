@@ -1,6 +1,7 @@
 .list {
     list-style: none;
 }
+@media screen and (max-width: 767px) {
 
 .products {
     padding-top: 60px;
@@ -9,6 +10,7 @@
     background-image: url('../images/produсt-bg-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
 }
 
 @media screen and (min-device-pixel-ratio: 2),
