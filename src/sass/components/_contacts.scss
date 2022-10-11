@@ -77,12 +77,60 @@ color:#131313;
 .contacts__list {
 margin-bottom: 32px;
 }
-.contacts__button_primary {
-width: 196px;
+.primary-btn {
+    font-family: inherit;
+    font-weight: 600;
+    background-color: #f8d24e;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    width: 196px;
+    padding: 12px 34px;
 margin-bottom: 16px;
 margin-left: auto;
 margin-right: auto;
-}
+  
+    &:hover {
+      background-color: #0a8817;
+    }
+  
+    &:focus {
+      background-color: #0a8817;
+      color: #fcfcfc;
+    }
+  
+    &:disabled {
+      background-color: #ababab;
+      color: #000000;
+    }
+  }
+  .secondary-btn {
+    font-family: inherit;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+    border: 2px solid #f8d24e;
+    border-radius: 10px;
+    width: 196px;
+margin-left: auto;
+margin-right: auto;
+  
+    &:hover {
+      border: 2px solid #0a8817;
+    }
+  
+    &:focus {
+      border: 2px solid #0a8817;
+      color: #fcfcfc;
+    }
+    &:disabled {
+      border: 2px solid #ababab;
+      color: #000000;
+    }
+  }
+   
 .contacts__button_secondary {
 width: 196px;
 margin-left: auto;
