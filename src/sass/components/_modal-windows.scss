@@ -8,18 +8,24 @@
 //     opacity: 1;
 
 //     background-color: rgba(0, 0, 0, 0.2);
-//     // transition: opacity var(--transition-dur-and-func);
 
+//     &.is-hidden {
+//           visibility: hidden;
+//           opacity: 0;
+//           pointer-events: none;
+//           scale: 0;
+//         }
+//     }
 
 .modal-window {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
   width: calc(100% - 56px);
   padding: 28px;
   scale: 1;
-  // transition: scale var(--transition-dur-and-func);
+  transition: scale 250ms linear;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -421,7 +427,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
       rgba(156, 190, 143, 0.7),
       #d9d9d9
     );
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    box-shadow: 0px 7px rgba(10, 136, 23, 0.25);
   }
   // modal window mobil
 
