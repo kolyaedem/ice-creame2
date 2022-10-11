@@ -1,86 +1,92 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" buy-modal >
     <div class="modal-window buy-modal">
-        <button type="button" class="modal-window__close-btn" data-modal-close>
+        <button type="button" class="modal-window__close-btn" buy-modal-close >
             <svg class="modal-window__close-icon" width="16" height="16">
-                <!-- <use href="./images/icons.svg#modal-close"></use> -->
+                <use href="/src/images/sprite.svg#icon-modal-close"></use>
             </svg>
         </button>
         <p class="modal-form__title">Buy now</p>
         <form class="modal-form">
+            <div class="checkbox-wrapper">
             <label class="chosen-product">
-            <input type="checkbox" class="chosen-product__checkbox" name="chosen-product">ice cream
-            <svg class="checkbox__item">
-                <!-- <use class="checkbox__icon" href="./images/icons.svg#form-check"></use> -->
-            </svg>
-            <input type="checkbox" class="checkbox" name="chosen-product">ice coffee
-                <svg class="checkbox__item">
-                    <!-- <use class="checkbox__icon" href="./images/icons.svg#form-check"></use> -->
-                </svg>
-            <input type="checkbox" class="checkbox" name="chosen-product">milkshake
-                <svg class="checkbox__item">
-                    <!-- <use class="checkbox__icon" href="./images/icons.svg#form-check"></use> -->
-                </svg>
+            <span class="checkbox__item cream-box">
+                <input type="checkbox" class="chosen-product__checkbox" name="ice-cream">ice cream
+            </span>
             </label>
+            <label class="chosen-product">
+                <span class="checkbox__item coffee-box">
+                <input type="checkbox" class="chosen-product__checkbox" name="ice-coffee">ice coffee
+                </span>
+            </label>
+            <label class="chosen-product">
+                <span class="checkbox__item milkshake-box">
+                    <input type="checkbox" class="chosen-product__checkbox" name="milkshake">milkshake
+            </label></div>
             <label class="modal-form__field">
-                <span class="modal-form__input-wrapper">
                     <input type="text" name="user_name" class="modal-form__input" placeholder="Name" required
                         pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґ]+">
-                </span>
             </label>
             <label class="modal-form__field">
-                <span class="modal-form__input-wrapper">
                     <input type="tel" class="modal-form__input" name="user_tel" placeholder="Phone" required
                         pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
-                </span>
             </label>
             <label class="modal-form__field modal-form__comment-field">
-                <textarea class="modal-form__comment" name="user_comment"
+                <textarea class="modal-form__comment modal-form__input" name="user_comment"
                     placeholder="Comment"></textarea></label>
-            <button type="submit" class="modal-form__submit-btn button">Submit</button>
+            <button type="submit" class="modal-form__submit-btn modal-btn">Submit</button>
         </form>
     </div>
 </div>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" ingredients-modal >
     <div class="modal-window ingredients-modal">
-        <button type="button" class="modal-window__close-btn" data-modal-close>
+        <button type="button" class="modal-window__close-btn" ingredients-modal-close >
             <svg class="modal-window__close-icon" width="16" height="16">
-                <!-- <use href="./images/icons.svg#modal-close"></use> -->
+                <use href="/src/images/sprite.svg#icon-modal-close"></use>
             </svg>
         </button>
         <p class="modal-form__title">Chololate icecream</p>
-        <!-- <picture><img src="#" alt="chocolate ice-cream" srcset="#"></picture> -->
+        <picture>
+          <source srcset="./images/desktop/product-modal.webp 1x, ./images/desktop/product-modal@2x.webp 2x" media="(min-width: 768px)"
+            type="image/webp" />
+          <source srcset="./images/desktop/product-modal.jpg 1x, ./images/desktop/product-modal@2x.jpg 2x" media="(min-width: 768px)" />
+        
+          <source srcset="./images/mobile/product-modal-mobile.webp 1x, ./images/mobile/product-modal@2x-mobile.webp 2x" media="(max-width: 767px)"
+            type="image/webp" />
+          <source srcset="./images/mobile/product-modal-mobile.jpg 1x, ./images/mobile/product-modal@2x-mobile.jpg 2x" media="(max-width: 767px)" />
+          <img class="modal-form__img" src="./images/mobile/product-modal-mobile.jpg" alt="chocolate ice-cream">
+        </picture>
         <ul class="composition">
-            <li class="composition__item">kcal<span class="composition__number-container">320</span></li>
-            <li class="composition__item">Prote...<span class="composition__number-container">4g</span></li>
-            <li class="composition__item">Fats<span class="composition__number-container">8,2g</span></li>
-            <li class="composition__item">Carbs<span class="composition__number-container">40,4g</span></li>
+            <li class="composition__item"><span class="composition__number-container">320</span>kcal</li>
+            <li class="composition__item"><span class="composition__number-container">4g</span>Prote...</li>
+            <li class="composition__item"><span class="composition__number-container">8,2g</span>Fats</li>
+            <li class="composition__item"><span class="composition__number-container">40,4g</span>Carbs</li>
         </ul>
         <p class="ingredients__title">Ingredients</p>
         <table class="ingredients__table">
             <tr>
-                <th>Milk</th>
-                <th>100ml</th>
+                <th class="table__item" >Milk</th>
+                <th class="table__item">100ml</th>
             </tr>
             <tr>
-                <th>Belgian chocolate</th>
-                <th>20g</th>
+                <th class="table__item">Belgian chocolate</th>
+                <th class="table__item">20g</th>
             </tr>
             <tr>
-                <th>Cream</th>
-                <th>150 ml</th>
+                <th class="table__item">Cream</th>
+                <th class="table__item">150 ml</th>
             </tr>
             <tr>
-                <th>Cocoa powder</th>
-                <th>30g</th>
+                <th class="table__item">Cocoa powder</th>
+                <th class="table__item">30g</th>
             </tr>
             <tr>
-                <th>Sugar</th>
-                <th>40g</th>
+                <th class="table__item">Sugar</th>
+                <th class="table__item">40g</th>
             </tr>
             <tr>
-                <th>Vanilla sugar</th>
-                <th>10g</th>
+                <th class="table__item">Vanilla sugar</th>
+                <th class="table__item">10g</th>
             </tr>
         </table>
         <form class="modal-form">
@@ -97,8 +103,140 @@
                 </span>
             </label>
             <label class="modal-form__field modal-form__comment-field">
-                <textarea class="modal-form__comment" name="user_comment" placeholder="Comment"></textarea></label>
-            <button type="submit" class="modal-form__submit-btn button">Submit</button>
+                <textarea class="modal-form__comment modal-form__input" name="user_comment" placeholder="Comment"></textarea></label>
+            <button type="submit" class="modal-form__submit-btn modal-btn">Submit</button>
         </form>
     </div>
 </div>
+  <!-- How it’s made? window -->
+
+  <div class="backdrop is-hidden "read-modal>
+    <div class="read__modal_win modal-window">
+      <button type="button" class="modal-window__close-btn modal__close-btn" read-modal-close>
+        <svg aria-label="" class="" width="16" height="16">
+          <use href="/src/images/sprite.svg#icon-modal-close"></use>1
+        </svg>
+      </button>
+      <h2 class="modal-title">How it’s made?</h2>
+      <div class="read__video">
+        <iframe
+          class="read__point"
+          src="https://www.youtube.com/embed/8WEMZ86Eho8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="modal__text">
+        We use a liquid nitrogen process to freeze the cream. After the scratch ice cream base
+        has steeped in its flavor for 24 hours in our walk-in refrigerator, we pour it into our
+        mixer.
+      </p>
+    </div>
+  </div>
+
+  <!-- location window -->
+
+  <div class="backdrop is-hidden"  location-modal>
+    <div class="location__modal modal-window">
+      <button
+        type="button"
+        class="modal-window__close-btn modal__close-btn" location-modal-close
+      >
+        <svg aria-label="" class="" width="16" height="16">
+          <use href="/src/images/sprite.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+
+      <h2 class="modal-title">Our Locations</h2>
+      <div class="location__map">
+        <iframe
+          class="location__point"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325268.8603631391!2d29.905559765625!3d50.438064999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1cef0d95b3%3A0x47b66ad9ac45bea2!2sICE%20CREAM%20CAFE!5e0!3m2!1sru!2sua!4v1665244020341!5m2!1sru!2sua"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <form action="https://www.google.com.ua/maps/">
+        <button type="submit" class="modal-btn">Open map</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- franchise window -->
+
+  <div class="backdrop is-hidden" franchise-modal>
+    <div class="franchise__modal modal-window">
+      <button type="button" class="modal-window__close-btn modal__close-btn" franchise-modal-close>
+        <svg aria-label="" class="" width="16" height="16">
+
+          <use href="/src/images/sprite.svg#icon-modal-close"></use>
+
+        </svg>
+      </button>
+
+      <!-- form -->
+      <h2 class="modal-title franchise__title">
+        Thank you for your interest in owning an franchise Cream shop
+      </h2>
+
+      <p class="modal-text franchise__text">
+        Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+        applications at this time. Once the application process resumes, we will contact you for
+        further information. Please fill out the contact information below and we will reach out
+        for additional information. We appreciate your patience.
+      </p>
+      <form class="franchise__modal_form">
+        <label class="franchise__text_form">
+          <span class="">
+            <input
+              type="text"
+              class="franchise__input"
+              name="user-name"
+              placeholder="Name"
+              pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
+              required
+            />
+          </span>
+        </label>
+        <label class="franchise__text_form">
+          <span class="">
+            <input
+              type="tel"
+              class="franchise__input"
+              name="user-phone"
+              placeholder="Phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              required
+            />
+          </span>
+        </label>
+        <label class="franchise__text_form">
+          <span class="">
+            <input
+              type="email"
+              class="franchise__input"
+              name="user-email"
+              placeholder="Email"
+              required
+            />
+          </span>
+        </label>
+
+        <label class="franchise__comment_form">
+          <textarea
+            class="franchise__input_user"
+            name="user-message"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+
+        <!-- button -->
+
+        <button type="submit" class="modal-btn">Submit</button>
+      </form>
+    </div>
+  </div>
