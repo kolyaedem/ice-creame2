@@ -1,131 +1,136 @@
 <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <a class="header__logo" href="./index.html">
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="../src/images/desktop/logo-desktop.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="../src/images/tablet/logo-tablet.png"
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="../src/images/mobile/logo-mobile.png"
-            />
-            <img class="logo" src="#" alt="page-logo" />
-          </picture>
-        </a>
-        <nav class="header-nav">
-          <ul class="header-nav__menu">
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">Home</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">How it’s made?</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">Our products</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__burger-wrapper">
-          <button class="header__burger" type="button">
-            <svg class="burger-icon">
-              <use href="./images/sprite.svg#icon-burger"></use>
-            </svg>
-          </button>
-          <button class="header__button" type="button" buy-modal-open>
-            Buy now
-            <svg class="button">
-              <use></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="hero__babble-background container">
-      <div class="title__amond-container">
-        <h1 class="hero__title">
-          ice cream made with <span class="hero__title_big">passion</span>
-        </h1>
-        <ul class="hero-amount__menu">
-          <li class="hero-amount__item">
-            <p class="hero-amount__title">16</p>
-            <p class="hero-amount__text hero-amount__text_position">cafes</p>
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo" href="./index.html">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="../src/images/desktop/logo-desktop.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../src/images/tablet/logo-tablet.png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="../src/images/mobile/logo-mobile.png"
+          />
+          <img class="logo" src="#" alt="page-logo" />
+        </picture>
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__menu">
+          <li class="header-nav__item">
+            <a href="" class="header-nav__link">Home</a>
           </li>
-          <li class="hero-amount__item">
-            <p class="hero-amount__title">23</p>
-            <p class="hero-amount__text">food trucks</p>
+          <li class="header-nav__item">
+            <a href="" class="header-nav__link">How it’s made?</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="" class="header-nav__link">Our products</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="" class="header-nav__link">Contact</a>
           </li>
         </ul>
+      </nav>
+      <div class="header__burger-wrapper">
+        <button class="header__burger" type="button">
+          <svg class="burger-icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <button class="header__button" type="button" buy-modal-open>
+          Buy now
+          <svg class="button">
+            <use></use>
+          </svg>
+        </button>
       </div>
-      <div class="hero__button-wrapper">
-        <button type="button" class="hero__button">Products</button>
-        <button type="button" class="hero__button">How it’s made?</button>
-      </div>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero__babble-background container">
+    <div class="title__amond-container">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title_big">passion</span>
+      </h1>
+      <ul class="hero-amount__menu">
+        <li class="hero-amount__item">
+          <p class="hero-amount__title">16</p>
+          <p class="hero-amount__text hero-amount__text_position">cafes</p>
+        </li>
+        <li class="hero-amount__item">
+          <p class="hero-amount__title">23</p>
+          <p class="hero-amount__text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__button-wrapper">
+      <button type="button" class="hero__button">Products</button>
+      <button type="button" class="hero__button">How it’s made?</button>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../src/images/desktop/ice-cream@1x.png 1x,
+          ../src/images/desktop/ice-cream@2x.png 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/mobile/ice-cream@1x.png 1x,
+          ../src/images/mobile/ice-cream@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/tablet/ice-cream@1x.png 1x,
+          ../src/images/tablet/ice-cream@2x.png 2x
+        "
+      />
+      <img src="#" alt="ice-cream" class="hero__ice" />
+    </picture>
+    <div class="content-wrapper">
       <picture>
         <source
           media="(min-width: 1200px)"
           srcset="
-            ../src/images/desktop/ice-cream@1x.png 1x,
-            ../src/images/desktop/ice-cream@2x.png 2x
-          "
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ../src/images/mobile/ice-cream@1x.png 1x,
-            ../src/images/mobile/ice-cream@2x.png 2x
+            ../src/images/desktop/ice-cream-plate@1x.png 1x,
+            ../src/images/desktop/ice-cream-plate@2x.png 2x
           "
         />
         <source
           media="(min-width: 768px)"
           srcset="
-            ../src/images/tablet/ice-cream@1x.png 1x,
-            ../src/images/tablet/ice-cream@2x.png 2x
+            ../src/images/tablet/ice-cream-plate@1x.png 1x,
+            ../src/images/tablet/ice-cream-plate@2x.png 2x
           "
         />
-        <img src="#" alt="ice-cream" class="hero__ice" />
+        <img
+          class="content-wrapper__image"
+          src="#"
+          alt="ice-cream on the plate"
+        />
       </picture>
-      <div class="content-wrapper">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              ../src/images/desktop/ice-cream-plate@1x.png 1x,
-              ../src/images/desktop/ice-cream-plate@2x.png 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../src/images/tablet/ice-cream-plate@1x.png 1x,
-              ../src/images/tablet/ice-cream-plate@2x.png 2x
-            "
-          />
-          <img
-            class="content-wrapper__image"
-            src="#"
-            alt="ice-cream on the plate"
-          />
-        </picture>
-        <div class="text-arrow-wrapper">
-          <p class="text-arrow-wrapper__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <svg class="text-arrow-wrapper__arrow">
+      <div class="text-arrow-wrapper">
+        <p class="text-arrow-wrapper__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <!-- <svg class="text-arrow-wrapper__arrow">
             <use href="./images/sprite.svg#icon-arrow-button"></use>
-          </svg>
+          </svg> -->
+        <div class="arrow">
+          <button type="button" class="arrow__button">
+            <span class="arrow__span"></span>
+          </button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
