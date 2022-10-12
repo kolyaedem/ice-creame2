@@ -6,24 +6,22 @@
             </svg>
         </button>
         <p class="modal-form__title">Buy now</p>
-        <form class="modal-form">
+        <form class="modal-form" name="order" >
             <div class="checkbox-wrapper">
-            <label class="chosen-product">
-            <span class="checkbox__item cream-box">
-                <input type="checkbox" class="chosen-product__checkbox" name="ice-cream">ice cream
-            </span>
+            <label class="chosen-product" >  
+            <input type="checkbox" class="chosen-product__checkbox" name="chosen-product" value="ice-cream" autofocus>
+            <span class="checkbox__item cream-box">ice cream</span>
             </label>
             <label class="chosen-product">
-                <span class="checkbox__item coffee-box">
-                <input type="checkbox" class="chosen-product__checkbox" name="ice-coffee">ice coffee
-                </span>
+              <input type="checkbox" class="chosen-product__checkbox" name="chosen-product" value="ice-coffee">
+              <span class="checkbox__item coffee-box">ice coffee</span>
             </label>
             <label class="chosen-product">
-                <span class="checkbox__item milkshake-box">
-                    <input type="checkbox" class="chosen-product__checkbox" name="milkshake">milkshake
+              <input type="checkbox" class="chosen-product__checkbox" name="chosen-product" value="milkshake">
+              <span class="checkbox__item milkshake-box">milkshake</span>
             </label></div>
             <label class="modal-form__field">
-                    <input type="text" name="user_name" class="modal-form__input" placeholder="Name" required
+                    <input type="text" name="user_name" class="modal-form__input" placeholder="Name" required 
                         pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґ]+">
             </label>
             <label class="modal-form__field">
@@ -89,10 +87,10 @@
                 <th class="table__item">10g</th>
             </tr>
         </table>
-        <form class="modal-form">
+        <form class="modal-form" name="order">
             <label class="modal-form__field">
                 <span class="modal-form__input-wrapper">
-                    <input type="text" name="user_name" class="modal-form__input" placeholder="Name" required
+                    <input type="text" name="user_name" class="modal-form__input" placeholder="Name" required 
                         pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґ]+">
                 </span>
             </label>
@@ -114,7 +112,7 @@
     <div class="read__modal_win modal-window">
       <button type="button" class="modal-window__close-btn modal__close-btn" read-modal-close>
         <svg aria-label="" class="" width="16" height="16">
-          <use href="/src/images/sprite.svg#icon-modal-close"></use>1
+          <use href="/src/images/sprite.svg#icon-modal-close"></use>
         </svg>
       </button>
       <h2 class="modal-title">How it’s made?</h2>
