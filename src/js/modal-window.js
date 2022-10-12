@@ -76,8 +76,8 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[ingredients-modal-open-2]'),
-    closeModalBtn: document.querySelector('[ingredients-modal-close]'),
-    modal: document.querySelector('[ingredients-modal]'),
+    closeModalBtn: document.querySelector('[ingredients-modal-close-2]'),
+    modal: document.querySelector('[ingredients-modal-2]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -91,8 +91,8 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[ingredients-modal-open-3]'),
-    closeModalBtn: document.querySelector('[ingredients-modal-close]'),
-    modal: document.querySelector('[ingredients-modal]'),
+    closeModalBtn: document.querySelector('[ingredients-modal-close-3]'),
+    modal: document.querySelector('[ingredients-modal-3]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -102,4 +102,3 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
-
