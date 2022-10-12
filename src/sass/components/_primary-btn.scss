@@ -1,10 +1,14 @@
 .primary-btn {
   font-family: inherit;
   font-weight: 600;
+  font-size: 14;
   background-color: #f8d24e;
   border-radius: 10px;
-  text-align: center;
+  text-align: start;
   color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &:hover {
     background-color: #0a8817;
@@ -15,8 +19,16 @@
     color: #fcfcfc;
   }
 
+  &:focus.chevron-right-icon {
+    fill: #fcfcfc;
+  }
+
   &:disabled {
     background-color: #ababab;
     color: #000000;
   }
+}
+
+.chevron-right-icon {
+  fill: currentColor;
 }
