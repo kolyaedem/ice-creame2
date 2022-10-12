@@ -1,8 +1,8 @@
 <section class="contacts">
-    <div class="container">
+    <div class="container contacts__container">
         <h2 class="contacts__title visually-hidden">Contacts</h2>
-        <address>
-        <ul class="contacts__list">
+        <address class="contacts__wrapper">
+        <ul class="contacts__list wrapper">
             <li class="contacts__item">
             <p class="contacts__subtitle">Cafe</p>
             <div class="contacts__group contacts__group_not-padding-top">
@@ -37,7 +37,7 @@
                     <a class="contacts__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
                 </div>
                 </li>
-                <li class="contacts__item">
+            <li class="contacts__item contacts__item_last">
                     <p class="contacts__subtitle">Cafe</p>
                     <div class="contacts__group contacts__group_not-padding-top">
                         <p class="contacts__text">New York</p>
@@ -53,12 +53,14 @@
                         <a class="contacts__tel" href="tel:+610383766284">+61(0) 383 766 284</a>
                         <a class="contacts__email" href="mailto:noreply@envato.com">noreply@envato.com</a>
                     </div>
-                    </li>
+                 </li>
         </ul>
     </address>
     <div class="contacts__button">
-    <button class="contacts__button_primary" type="button">Our Locations</button>
-    <button class="contacts__button_secondary" type="button">Franchise</button>
+
+    <button class="primary-btn contacts__primary-btn" type="button" location-modal-open>Our Locations &gt</button>
+    <button class="secondary-btn contacts__secondary-btn" type="button" franchise-modal-open>Franchise &gt</button>
+
 </div>
     </div>
 </section>

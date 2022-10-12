@@ -12,6 +12,7 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[franchise-modal-open]'),
@@ -26,6 +27,7 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[read-modal-open]'),
@@ -40,31 +42,64 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[buy-modal-open]'),
-      closeModalBtn: document.querySelector('buy-modal-close]'),
-      modal: document.querySelector('[buy-modal]'),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
+  const refs = {
+    openModalBtn: document.querySelector('[buy-modal-open]'),
+    closeModalBtn: document.querySelector('[buy-modal-close]'),
+    modal: document.querySelector('[buy-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
 })();
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[ingredients-modal-open]'),
-      closeModalBtn: document.querySelector('[ingredients-close]'),
-      modal: document.querySelector('[ingredients-modal]'),
-    };
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[ingredients-modal-open]'),
+    closeModalBtn: document.querySelector('[ingredients-modal-close]'),
+    modal: document.querySelector('[ingredients-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[ingredients-modal-open-2]'),
+    closeModalBtn: document.querySelector('[ingredients-modal-close]'),
+    modal: document.querySelector('[ingredients-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[ingredients-modal-open-3]'),
+    closeModalBtn: document.querySelector('[ingredients-modal-close]'),
+    modal: document.querySelector('[ingredients-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
