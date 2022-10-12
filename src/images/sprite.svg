@@ -1,5 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="arrow-right" viewBox="0 0 24 32">
+<path d="M21.413 14.588c0.781 0.781 0.781 2.050 0 2.831l-12 12c-0.781 0.781-2.050 0.781-2.831 0s-0.781-2.050 0-2.831l10.588-10.588-10.581-10.588c-0.781-0.781-0.781-2.050 0-2.831s2.050-0.781 2.831 0l12 12z"></path>
+</symbol>
 <symbol id="icon-fb" viewBox="0 0 16 32">
 <path d="M14.143 15.972h-4.034v14.865h-6.112v-14.865h-2.907v-5.224h2.907v-3.381c0-2.418 1.142-6.203 6.166-6.203l4.527 0.019v5.071h-3.285c-0.539 0-1.296 0.271-1.296 1.424v3.075h4.567l-0.534 5.219z"></path>
 </symbol>
