@@ -14,9 +14,6 @@
 .about__label {
   font-family: Montserrat;
   @include font(700, 18px, 22px);
-  //   font-weight: 700;
-  //   font-size: 18px;
-  //   line-height: 22px;
   text-align: center;
   padding-top: 60px;
   margin-bottom: 12px;
@@ -24,9 +21,6 @@
   color: #fcfcfc;
   @media screen and (min-width: 480px) {
     @include font(800, 30px, 36px);
-    //   font-weight: 800;
-    //   font-size: 30px;
-    //   line-height: 36px;
     letter-spacing: 0.04em;
   }
 }
@@ -34,9 +28,6 @@
   font-family: Seymour One;
   @include font(400, 30px, 38px);
   max-width: 200px;
-  //   font-weight: 400;
-  //   font-size: 30px;
-  //   line-height: 38px;
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
@@ -46,9 +37,6 @@
   color: #fcfcfc;
   @media screen and (min-width: 480px) {
     @include font(800, 30px, 36px);
-    //   font-weight: 800;
-    //   font-size: 30px;
-    //   line-height: 36px;
   }
   @media screen and (min-width: 768px) {
     max-width: 454px;
@@ -59,14 +47,11 @@
   font-family: Montserrat;
   @include font(400, 12px, 20px);
   width: 100%;
-  // font-weight: 400;
-  // font-size: 12px;
-  // line-height: 20px;
   text-align: center;
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: #fcfcfc;
   @media screen and (min-width: 320px) {
     max-width: 220px;
@@ -135,15 +120,36 @@
 }
 
 .button {
-  display: block;
   width: 164px;
   height: 42px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
+  padding-left: 34px;
   margin-bottom: 40px;
+
   @media screen and (min-width: 768px) {
     margin-left: 0;
     margin-top: 50px;
+  }
+}
+.riht-send-icon {
+  position: relative;
+  max-width: 164px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+.riht-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 128px;
+  width: 12px;
+  height: 12px;
+  &:focus {
+    fill: #fcfcfc;
   }
 }
 .about__position {
@@ -161,30 +167,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
-
+}
 
 @media screen and (min-width: 768px) {
   .advantage__list {
     flex-direction: row;
-  align-items: center;
+    align-items: center;
   }
-
 }
 
-//  <!--PADING SECTION-->
-// .advantage {
-//   width: 100%;
-//   max-height: 1565px;
-//   background-color: #84a178;
-//   list-style: none;
-//   @media screen and (min-width: 768px) {
-//     max-height: 1075px;
-//   }
-//   @media screen and (min-width: 768px) {
-//   max-height: 1228px;
-// }
-// }
 .advantage__list {
   display: flex;
   flex-direction: column;
@@ -197,7 +188,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   @media screen and (min-width: 768px) {
     width: calc((100% - 152px) / 2);
     padding-bottom: 200px;
@@ -226,9 +217,8 @@
   fill: black;
 }
 .name-container {
-  // font-family: Montserrat;
+  font-family: Roboto;
   @include font(700, 36px, 42px);
-
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -237,6 +227,7 @@
   margin-bottom: 18px;
 
   @media screen and (min-width: 768px) {
+    font-family: Montserrat;
     text-transform: none;
     font-size: 48px;
     line-height: 59px;
