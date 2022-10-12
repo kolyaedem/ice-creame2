@@ -119,13 +119,13 @@
 }
 
 .products__modal-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .modal-button_icon {
     font-weight: 400;
   }
-}
-
-.modal-button__icon-focused {
-  display: none;
 }
 
 .modal-button__icon {
@@ -140,10 +140,7 @@
     transform: scale(1.25);
   }
   &:focus .modal-button__icon {
-    display: none;
-  }
-  &:focus .modal-button__icon-focused {
-    display: inline;
+    transform: scale(1.4);
   }
 }
 
