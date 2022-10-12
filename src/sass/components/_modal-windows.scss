@@ -635,6 +635,9 @@ scale: 0;
   text-align: center;
   justify-content: space-between;
   padding-bottom: 8px;
+  text-overflow: ellipsis;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .composition__number-container {
@@ -648,6 +651,7 @@ scale: 0;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   align-items: center;
   justify-content: center;
+  
 }
 .ingredients__title {
   @include font(500, 20px, 28px);
@@ -679,6 +683,7 @@ scale: 0;
     width: 65px;
     height: 90px;
     @include font(400, 12px, 15px);
+    padding-bottom: 14px;
   }
   .composition__number-container {
     width: 53px;
