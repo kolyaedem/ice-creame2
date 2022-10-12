@@ -331,13 +331,22 @@
   }
 }
 
+
+  .modal-form__submit-btn {
+    width: 114px;
+    height: 42px;
+    font-size: 14px;
+    }
+
 .modal-form__comment {
   resize: none;
   height: 65px;
 }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .modal-window {
     width: 280px;
+
   }
 }
 
