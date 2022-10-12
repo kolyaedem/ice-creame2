@@ -6,8 +6,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f5f5;
-  background-image: url('../images/produсt-bg-mobile.png'),
-    url('../images/product-bg-mobile.webp');
+  background-image: url('../images/bg-product-mobile.png');
+    
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -16,8 +16,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .products {
-    background-image: url('../images/produсt-bg@2x-mobile.png'),
-      url('../images/product-bg@2x-desktop.webp');
+    background-image: url('../images/bg-product-mobile@2x.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -58,8 +57,7 @@
   .products {
     padding-top: 60px;
     padding-bottom: 82px;
-    background-image: url('../images/produсt-bg-tablet.png'),
-      url('../images/product-bg-tablet.webp');
+    background-image: url('../images/bg-product-tablet.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -92,8 +90,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .products {
-    background-image: url('../images/produсt-bg@2x-tablet.png'),
-      url('../images/product-bg@2x-tablet.webp');
+    background-image: url('../images/bg-product-tablet@2x.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -109,8 +106,7 @@
   .products {
     padding-top: 60px;
     padding-bottom: 82px;
-    background-image: url('../images/produсt-bg-desktop.png'),
-      url('../images/product-bg-desktop.webp');
+    background-image: url('../images/bg-product-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -133,8 +129,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .products {
-    background-image: url('../images/produсt-bg@2x-desktop.png'),
-      url('../images/product-bg@2x-desktop.webp');
+    background-image: url('../images/bg-product-desktop@2x.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
