@@ -9,6 +9,7 @@
 
     background-color: rgba(0, 0, 0, 0.2);
 
+
     &.is-hidden {
           visibility: hidden;
           opacity: 0;
@@ -19,12 +20,13 @@
 
 .modal-window {
 
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: calc(100% - 56px);
+  max-height: calc(100vh - 10px);
+  overflow-y: scroll;
   padding: 28px;
   scale: 1;
   transition: scale 250ms linear;
@@ -242,7 +244,6 @@
 
 .chosen-product__checkbox:checked + .cream-box {
   background-color: #aec6a5;
-  box-shadow: none;
 }
 
 .modal-btn {
