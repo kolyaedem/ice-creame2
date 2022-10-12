@@ -8,25 +8,24 @@
 //     opacity: 1;
 
 //     background-color: rgba(0, 0, 0, 0.2);
-//     // transition: opacity var(--transition-dur-and-func);
 
 //     &.is-hidden {
-//         visibility: hidden;
-//         opacity: 0;
-//         pointer-events: none;
-//         scale: 0;
+//           visibility: hidden;
+//           opacity: 0;
+//           pointer-events: none;
+//           scale: 0;
+//         }
 //     }
-// }
 
 .modal-window {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: calc(100% - 56px);
   padding: 28px;
   scale: 1;
-  // transition: scale var(--transition-dur-and-func);
+  transition: scale 250ms linear;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -142,6 +141,7 @@
   transform: translate(-50%, -50%);
   background-image: url(/src/images/mobile/product-1-mobile.jpg);
 }
+
 .chosen-product:nth-child(2n)::before {
   background-image: linear-gradient(
     0deg,
@@ -149,14 +149,9 @@
     rgba(248, 210, 78, 0.7),
     #d9d9d9
   );
-  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
-.checkbox-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 84px;
-  margin-bottom: 24px;
-}
+// box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+
 .chosen-product {
   position: relative;
 }
@@ -179,21 +174,6 @@
   height: 130px;
   border-radius: 98px;
   background-size: contain;
-}
-
-.chosen-product::after {
-  content: '';
-  display: inline-block;
-  width: 130px;
-  height: 130px;
-  border-radius: 98px;
-  background-size: contain;
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, -50%);
-  background-image: url(/src/images/mobile/product-1-mobile.jpg);
 }
 .chosen-product:nth-child(2n)::before {
   background-image: linear-gradient(
@@ -232,6 +212,20 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .chosen-product::after {
+    background-image: url(/src/images/mobile/product-1@2x-mobile.jpg);
+  }
+  .chosen-product:nth-child(2n)::after {
+    background-image: url(/src/images/mobile/product-2@2x-mobile.jpg);
+  }
+  .chosen-product:nth-child(3n)::after {
+    background-image: url(/src/images/mobile/product-3@2x-mobile.jpg);
+  }
+}
+
 .cream-box {
   border: 2px solid #96af8c;
 }
@@ -295,10 +289,10 @@
   box-shadow: none;
 }
 
-.chosen-product__checkbox {
-  appearance: none;
-  position: absolute;
-}
+// .chosen-product__checkbox {
+//   appearance: none;
+//   position: absolute;
+// }
 
 .modal-form__submit-btn {
   width: 114px;
@@ -370,6 +364,17 @@
   .chosen-product {
     margin-bottom: 40px;
   }
+  .chosen-product::after {
+    background-image: url(/src/images/desktop/product-1-desktop.jpg);
+  }
+
+  .chosen-product:nth-child(2n)::after {
+    background-image: url(/src/images/desktop/product-2-desktop.jpg);
+  }
+
+  .chosen-product:nth-child(3n)::after {
+    background-image: url(/src/images/desktop/product-3-desktop.jpg);
+  }
   .modal-form__title {
     margin-bottom: 103px;
   }
@@ -381,6 +386,21 @@
   }
   .modal-form__submit-btn {
     width: 121px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .chosen-product::after {
+    background-image: url(/src/images/desktop/product-1-desktop@2x.jpg);
+  }
+
+  .chosen-product:nth-child(2n)::after {
+    background-image: url(/src/images/desktop/product-2-desktop@2x.jpg);
+  }
+
+  .chosen-product:nth-child(3n)::after {
+    background-image: url(/src/images/desktop/product-3-desktop@2x.jpg);
   }
 }
 // ------Ingredients-styles--------//
@@ -405,7 +425,7 @@
     rgba(156, 190, 143, 0.7),
     #d9d9d9
   );
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  box-shadow: 0px 7px rgba(10, 136, 23, 0.25);
 }
 // modal window mobil
 
@@ -747,4 +767,10 @@
     width: 20px;
     height: 20px;
   }
+}
+.modal__close-btn {
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
 }
