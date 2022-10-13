@@ -2,9 +2,21 @@
   <div class="container">
     <div class="header__wrapper">
       <a class="header__logo" href="./index.html">
-        <svg class="logo">
-          <use href="#"></use>
-        </svg>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="../src/images/desktop/logo-desktop.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="../src/images/tablet/logo-tablet.png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="../src/images/mobile/logo-mobile.png"
+          />
+          <img class="logo" src="#" alt="page-logo" />
+        </picture>
       </a>
       <nav class="header-nav">
         <ul class="header-nav__menu">
@@ -23,52 +35,150 @@
         </ul>
       </nav>
       <div class="header__burger-wrapper">
-        <button class="header__burger" type="button">
+        <button class="header__burger" type="button" data-menu-open>
           <svg class="burger-icon">
-            <use></use>
+            <use href="./images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
-        <button class="header__button" type="button">
+        <button class="header__button primary-btn" type="button" buy-modal-open>
           Buy now
-          <svg class="button">
-            <use></use>
+          <svg
+            aria-label="иконка шеврона вправо"
+            class="chevron-right-icon"
+            width="12"
+            height="12"
+          >
+            <use href="./images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
       </div>
     </div>
   </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <div class="header__mobile-menu">
+        <a class="header__logo" href="./index.html">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="../src/images/tablet/logo-tablet.png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="../src/images/mobile/logo-mobile.png"
+            />
+            <img class="logo" src="#" alt="page-logo" />
+          </picture>
+        </a>
+        <button class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon">
+            <use href="../src/images/sprite.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu__link">
+        <ul class="navilink-mobile">
+          <li class="menu__item-mobile">
+            <a href="#" class="link menu__item-link">Home</a>
+          </li>
+          <li class="menu__item-mobile">
+            <a href="#" class="link menu__item-link">How it’s made?</a>
+          </li>
+          <li class="menu__item-mobile">
+            <a href="#" class="link menu__item-link">Our products</a>
+          </li>
+          <li class="menu__item-mobile">
+            <a href="#" class="link menu__item-link">Contact</a>
+          </li>
+        </ul>
+        <button class="mobile__button" type="button">Buy now ></button>
+      </div>
+    </div>
+  </div>
 </header>
 <section class="hero">
-  <div class="container">
-    <h1 class="hero__title">
-      ice cream made with <span class="hero__title_big">passion</span>
-    </h1>
-    <div class="hero__button-wrapper">
-      <button type="button" class="hero__button">Products</button>
-      <button type="button" class="hero__button">How it’s made?</button>
+  <div class="hero__babble-background container">
+    <div class="title__amond-container">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__title_big">passion</span>
+      </h1>
+      <ul class="hero-amount__menu">
+        <li class="hero-amount__item">
+          <p class="hero-amount__title">16</p>
+          <p class="hero-amount__text hero-amount__text_position">cafes</p>
+        </li>
+        <li class="hero-amount__item">
+          <p class="hero-amount__title">23</p>
+          <p class="hero-amount__text">food trucks</p>
+        </li>
+      </ul>
     </div>
-    <ul class="hero-amount__menu">
-      <li class="hero-amount__item">
-        <p class="hero-amount__title">16</p>
-        <p class="hero-amount__text">cafes</p>
-      </li>
-      <li class="hero-amount__item">
-        <p class="hero-amount__title">23</p>
-        <p class="hero-amount__text">food trucks</p>
-      </li>
-    </ul>
-    <img src="#" alt="ice-cream" class="hero__ice" />
-    <img src="#" alt="bubbles" class="hero__bubbles" />
-    <div class="content-wrapper">
-      <img
-        class="content-wrapper__image"
-        src="#"
-        alt="ice-cream on the plate"
+    <div class="hero__button-wrapper">
+      <button type="button" class="hero__button secondary-btn">Products</button>
+      <button type="button" class="hero__button_second how-its-made-btn">
+        How it’s made?
+      </button>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ../src/images/desktop/ice-cream@1x.png 1x,
+          ../src/images/desktop/ice-cream@2x.png 2x
+        "
       />
-      <p class="content-wrapper__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/mobile/ice-cream@1x.png 1x,
+          ../src/images/mobile/ice-cream@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/tablet/ice-cream@1x.png 1x,
+          ../src/images/tablet/ice-cream@2x.png 2x
+        "
+      />
+      <img src="#" alt="ice-cream" class="hero__ice" />
+    </picture>
+    <div class="content-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ../src/images/desktop/ice-cream-plate@1x.png 1x,
+            ../src/images/desktop/ice-cream-plate@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/tablet/ice-cream-plate@1x.png 1x,
+            ../src/images/tablet/ice-cream-plate@2x.png 2x
+          "
+        />
+        <img
+          class="content-wrapper__image"
+          src="#"
+          alt="ice-cream on the plate"
+        />
+      </picture>
+      <div class="text-arrow-wrapper">
+        <p class="text-arrow-wrapper__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <!-- <svg class="text-arrow-wrapper__arrow">
+            <use href="./images/sprite.svg#icon-arrow-button"></use>
+          </svg> -->
+        <div class="arrow">
+          <button type="button" class="arrow__button">
+            <span class="arrow__span"></span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
