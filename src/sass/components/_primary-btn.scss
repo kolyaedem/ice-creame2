@@ -1,7 +1,7 @@
 .primary-btn {
   font-family: inherit;
   font-weight: 600;
-  font-size: 14;
+  font-size: 14px;
   background-color: #f8d24e;
   border-radius: 10px;
   text-align: start;
@@ -9,6 +9,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: #0a8817;
@@ -31,4 +34,5 @@
 
 .chevron-right-icon {
   fill: currentColor;
+  transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
