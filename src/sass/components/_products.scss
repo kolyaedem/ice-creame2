@@ -6,7 +6,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f5f5;
-  background-image: url('../images/bg-product-mobile.png');
+  background-image: url('../images/bg-product-mobile.jpg');
     
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .products {
-    background-image: url('../images/bg-product-mobile@2x.png');
+    background-image: url('../images/bg-product-mobile@2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -57,7 +57,7 @@
   .products {
     padding-top: 60px;
     padding-bottom: 82px;
-    background-image: url('../images/bg-product-tablet.png');
+    background-image: url('../images/bg-product-tablet.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -90,7 +90,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .products {
-    background-image: url('../images/bg-product-tablet@2x.png');
+    background-image: url('../images/bg-product-tablet@2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -106,7 +106,7 @@
   .products {
     padding-top: 60px;
     padding-bottom: 82px;
-    background-image: url('../images/bg-product-desktop.png');
+    background-image: url('../images/bg-product-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -129,7 +129,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .products {
-    background-image: url('../images/bg-product-desktop@2x.png');
+    background-image: url('../images/bg-product-desktop@2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
