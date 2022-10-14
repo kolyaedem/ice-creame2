@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <div class="header__wrapper">
-      <a class="header__logo" href="./index.html">
+      <a class="header__logo" href="./index.html" id="header">
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -21,16 +21,16 @@
       <nav class="header-nav">
         <ul class="header-nav__menu">
           <li class="header-nav__item">
-            <a href="" class="header-nav__link">Home</a>
+            <a href="#header" class="header-nav__link">Home</a>
           </li>
           <li class="header-nav__item">
-            <a href="" class="header-nav__link">How it’s made?</a>
+            <a href="#how-it's-made" class="header-nav__link">How it’s made?</a>
           </li>
           <li class="header-nav__item">
-            <a href="" class="header-nav__link">Our products</a>
+            <a href="#products" class="header-nav__link">Our products</a>
           </li>
           <li class="header-nav__item">
-            <a href="" class="header-nav__link">Contact</a>
+            <a href="#contacts" class="header-nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -79,16 +79,16 @@
       <div class="menu__link">
         <ul class="navilink-mobile">
           <li class="menu__item-mobile">
-            <a href="#" class="link menu__item-link">Home</a>
+            <a href="#header" class="link menu__item-link">Home</a>
           </li>
           <li class="menu__item-mobile">
-            <a href="#" class="link menu__item-link">How it’s made?</a>
+            <a href="#how-it's-made" class="link menu__item-link">How it’s made?</a>
           </li>
           <li class="menu__item-mobile">
-            <a href="#" class="link menu__item-link">Our products</a>
+            <a href="#products" class="link menu__item-link">Our products</a>
           </li>
           <li class="menu__item-mobile">
-            <a href="#" class="link menu__item-link">Contact</a>
+            <a href="#contacts" class="link menu__item-link">Contact</a>
           </li>
         </ul>
         <button class="mobile__button" type="button">Buy now ></button>
@@ -114,10 +114,10 @@
       </ul>
     </div>
     <div class="hero__button-wrapper">
-      <button type="button" class="hero__button secondary-btn">Products</button>
-      <button type="button" class="hero__button_second how-its-made-btn">
+      <a href="#products" class="hero__button secondary-btn">Products</a>
+      <a href="#how-it's-made" class="hero__button_second how-its-made-btn">
         How it’s made?
-      </button>
+      </a>
     </div>
     <picture>
       <source
@@ -128,20 +128,20 @@
         "
       />
       <source
-        media="(max-width: 767px)"
-        srcset="
-          ../src/images/mobile/ice-cream@1x.png 1x,
-          ../src/images/mobile/ice-cream@2x.png 2x
-        "
-      />
-      <source
         media="(min-width: 768px)"
         srcset="
           ../src/images/tablet/ice-cream@1x.png 1x,
           ../src/images/tablet/ice-cream@2x.png 2x
         "
       />
-      <img src="#" alt="ice-cream" class="hero__ice" />
+      <source
+      media="(max-width: 767px)"
+      srcset="
+        ../src/images/mobile/ice-cream@1x.png 1x,
+        ../src/images/mobile/ice-cream@2x.png 2x
+      "
+    />
+      <img src="#" alt="ice-cream" class="hero__ice"/>
     </picture>
     <div class="content-wrapper">
       <picture>

@@ -126,6 +126,9 @@
   justify-content: center;
 }
 .about__primary-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 164px;
   padding: 12px 34px;
   margin-bottom: 40px;
@@ -260,3 +263,8 @@
     padding-bottom: 180px;
   }
 }
+
+
+.about__primary-btn:focus .contacts__icon-btn {
+      fill: #ffffff;
+} 
