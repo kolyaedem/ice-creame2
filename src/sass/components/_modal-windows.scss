@@ -547,6 +547,13 @@ scale: 0;
   border-radius: 10px;
 }
 
+.location_btn {
+  text-align: center;
+  width: 145px;
+  padding: 12px 34px;
+  border-radius: 10px;
+}
+
 // read
 .read__video {
   margin-bottom: 20px;
@@ -796,3 +803,7 @@ scale: 0;
   }
 }
 
+.location__btn {
+  width: 145px;
+  text-align: center;
+}

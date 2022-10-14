@@ -97,8 +97,9 @@
     color: #fcfcfc;
     margin-bottom: 32px;
   }
-  .hero__button-wrapper {
+  .hero__button-wrapper {    
     display: flex;
+    align-items: center;
     gap: 8px;
     margin-bottom: 189px;
   }
@@ -382,8 +383,8 @@
     margin-bottom: 42px;
   }
 
-  .hero__button_second {
-    font-size: 14px;
+  .hero__button-wrapper .hero__button_second {
+    font-size: 14px;    
   }
 
   .header__burger-wrapper {
@@ -468,6 +469,11 @@
 }
 
 //button
+
+.hero__button-wrapper {
+  display: flex;
+  align-items: center;
+}
 
 .arrow {
   .arrow__button {
